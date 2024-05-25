@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin:0%
+}
+
+/* Style the header */
+header {
+  background-color: #d00f20;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #dfbd33;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ffffff;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #ffffff;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #dfbd33;
+  padding: 10px;
+  text-align: center;
+  color: #d00f20;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+h2.a {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2 class="a">CROCS MARQUINHOS MTO FODAS</h2>
+  <marquee behavior="alternate">as melhores do mundo</marquee>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://www.crocs.com.br/sandalia-crocs-classic-elevated-minecraft-clog-multi-208472_7356/p">crocs menos fodas</a></li>
+      <li><a href="https://www.crocs.com.br/sandalia-crocs-crocband-clog-stuccomelon-11016_4794/p">crocs verde vomito</a></li>
+      <li><a href="https://www.crocs.com.br/sandalia-crocs-lights-lightning-mcqueen-clog-red-205759_8939/p">crocs relampago marquinhos</a></li>
+    </ul>
+  </nav>
+  <img src="/aula 07/img/crocs-mqueen.png" class="minhaimagem">
+  <article>
+    <h1>APENAS 9999,99 DÓLARES</h1>
+    <p>MARQUINHOHOHOHOSSSS</p>
+    <p>KACHOWWWWWW</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
